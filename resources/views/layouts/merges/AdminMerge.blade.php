@@ -1,4 +1,4 @@
-@include('layouts._includes.AdminHeader')
-@include('layouts._includes.AdminNav')
+@include('layouts._includes.Admin.AdminHeader')
+@include('layouts._includes.Admin.AdminNav')
 @yield('content')
-@include('layouts._includes.AdminFooter')
+@include('layouts._includes.Admin.AdminFooter')

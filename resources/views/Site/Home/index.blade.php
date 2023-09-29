@@ -72,7 +72,7 @@
                                 data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]"
                                 data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                 style="z-index: 7; text-transform:capitalize; white-space: unset; color:#fff; font-family:rubik; font-size:18px; line-height:28px; font-weight:400;">
-                                SISTEMA DE GESTÃO DE PERFIL ACADEMINCO
+                                SISTEMA DE GESTÃO DE PERFIL ACADEMICO
                             </div>
                             <!-- LAYER NR. 4 -->
                             <div class="tp-caption Newspaper-Button rev-btn " id="slide-100-layer-5"
@@ -374,8 +374,7 @@
                             <h5>Aprenda Novas Habilidades On-line</h5>
                             <form class="cours-search">
                                 <div class="input-group">
-                                    <input type="text" class="form-control"
-                                        placeholder="O que vás aprender hoje?	">
+                                    <input type="text" class="form-control" placeholder="O que vás aprender hoje?	">
                                     <div class="input-group-append">
                                         <button class="btn" type="submit">Pesquisar</button>
                                     </div>
@@ -440,7 +439,8 @@
                                             <h4 class="event-title"><a href="#">Workshop de Cibersegurança</a></h4>
                                             <ul class="media-post">
                                                 <li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
-                                                <li><a href="#"><i class="fa fa-map-marker"></i> Kinaxixi, Luanda</a>
+                                                <li><a href="#"><i class="fa fa-map-marker"></i> Kinaxixi,
+                                                        Luanda</a>
                                                 </li>
                                             </ul>
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -465,7 +465,8 @@
                                             <h4 class="event-title"><a href="#">Feira de Tecnologia</a></h4>
                                             <ul class="media-post">
                                                 <li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
-                                                <li><a href="#"><i class="fa fa-map-marker"></i> Kinaxixi, Luanda</a>
+                                                <li><a href="#"><i class="fa fa-map-marker"></i> Kinaxixi,
+                                                        Luanda</a>
                                                 </li>
                                             </ul>
                                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -487,7 +488,8 @@
                                             </div>
                                         </div>
                                         <div class="event-info">
-                                            <h4 class="event-title"><a href="#">Palestra - Inovação Tecnológica</a></h4>
+                                            <h4 class="event-title"><a href="#">Palestra - Inovação Tecnológica</a>
+                                            </h4>
                                             <ul class="media-post">
                                                 <li><a href="#"><i class="fa fa-clock-o"></i> 7:00am 8:00am</a></li>
                                                 <li><a href="#"><i class="fa fa-map-marker"></i> Berlin, Germany</a>
@@ -576,7 +578,8 @@
                                         <li><a href="#"><i class="fa fa-user"></i>Por António Gil</a></li>
                                     </ul>
                                     <h5 class="post-title"><a href="blog-details.html"> Assunto da Notícia.</a></h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur consectetur dicta hic, eaque laborum sapiente...
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur consectetur
+                                        dicta hic, eaque laborum sapiente...
                                     </p>
                                     <div class="post-extra">
                                         <a href="#" class="btn-link">Leia Mais</a>
@@ -597,7 +600,8 @@
                                         <li><a href="#"><i class="fa fa-user"></i>Por António Gil</a></li>
                                     </ul>
                                     <h5 class="post-title"><a href="blog-details.html">Assunto da Notícia</a></h5>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, harum eaque? Aliquid nisi officiis illum!..</p>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, harum eaque?
+                                        Aliquid nisi officiis illum!..</p>
                                     <div class="post-extra">
                                         <a href="#" class="btn-link">Leia Mais</a>
                                         <a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>14
@@ -617,7 +621,8 @@
                                         <li><a href="#"><i class="fa fa-user"></i>Por António Gil</a></li>
                                     </ul>
                                     <h5 class="post-title"><a href="blog-details.html">Assunto da Notícia</a></h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti libero ipsam natus officia. Cum..</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti libero ipsam natus
+                                        officia. Cum..</p>
                                     <div class="post-extra">
                                         <a href="#" class="btn-link">Leia Mais</a>
                                         <a href="#" class="comments-bx"><i class="fa fa-comments-o"></i>23

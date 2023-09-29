@@ -14,7 +14,8 @@
 	<meta name="description" content="EduChamp : Education HTML Template" />
 
 	<!-- OG -->
-	<meta property="og:title" content="EduChamp : Education HTML Template" />
+	<meta property="og:title" content="EduChamp : Education HTML
+	 Template" />
 	<meta property="og:description" content="EduChamp : Education HTML Template" />
 	<meta property="og:image" content="" />
 	<meta name="format-detection" content="telephone=no">
@@ -24,7 +25,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="Site/images/favicon.png" />
 
 	<!-- PAGE TITLE HERE ============================================= -->
-	<title>SGPA : Home </title>
+	<title> @yield('title')</title>
 
 	<!-- MOBILE SPECIFIC ============================================= -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -64,7 +65,7 @@
 					<div class="topbar-left">
 						<ul>
 							<li><a href="faq-1.html"><i class="fa fa-question-circle"></i>Perguntas</a></li>
-							<li><a href="javascript:;"><i class="fa fa-envelope-o"></i>profgil@website.com</a></li>
+							<li><a href="javascript:;"><i class="fa fa-envelope-o"></i>sgpa@website.com</a></li>
 						</ul>
 					</div>
 					<div class="topbar-right">
@@ -75,7 +76,7 @@
                             @endguest
 
                             @auth
-                                <li><a href="{{ route('admin.index') }}">Minha Conta</a></li>
+                                <li><a href="{{ route('admin.index') }}">Meu perfil</a></li>
 							    <li><a href="{{ route('register') }}">Logout</a></li>
                             @endauth
 						</ul>
@@ -124,18 +125,21 @@
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="{{ route('site.home') }}">Home </a></li>
 
-							<li><a href="javascript:;">Sobre</a></li>
-							<li><a href="javascript:;">Forun</a></li>
+							<li><a href="{{ route('site.about') }}">Sobre</a></li>
+							<li><a href="javascript:;">Foruns</a></li>
+							<li><a href="{{ route('site.article') }}">Artigos</a></li>
 							<li class="add-mega-menu"><a href="javascript:;">Treinamentos <i class="fa fa-chevron-down"></i></a>
 								<ul class="sub-menu add-menu">
 									<li class="add-menu-left">
-										<h5 class="menu-adv-title">Our Courses</h5>
+										<h5 class="menu-adv-title">Áreas</h5>
 										<ul>
-											<li><a href="courses.html">Courses </a></li>
-											<li><a href="courses-details.html">Courses Details</a></li>
-											<li><a href="profile.html">Instructor Profile</a></li>
-											<li><a href="event.html">Upcoming Event</a></li>
-											<li><a href="membership.html">Membership</a></li>
+											<li><a href="courses.html">Virtualização </a></li>
+											<li><a href="courses-details.html">Programação</a></li>
+											<li><a href="profile.html">Administração de Sistemas</a></li>
+											<li><a href="event.html">Redes de Computadores</a></li>
+											<li><a href="membership.html">Design</a></li>
+											<li><a href="membership.html">Cibersegurança</a></li>
+											<li><a href="membership.html">Análises de Dados</a></li>
 										</ul>
 									</li>
 									<li class="add-menu-right">
@@ -143,7 +147,7 @@
 									</li>
 								</ul>
 							</li>
-                            <li><a href="javascript:;">Contato</a></li>
+                            <li><a href="{{ route('site.contact') }}">Contatos</a></li>
 						</ul>
 						{{-- <div class="nav-social-link">
 							<a href="javascript:;"><i class="fa fa-facebook"></i></a>
