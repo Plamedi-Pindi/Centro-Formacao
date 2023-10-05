@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
+use App\Models\Area;
 
 class RegisteredUserController extends Controller
 {
@@ -20,7 +21,8 @@ class RegisteredUserController extends Controller
      */
     public function create()
     {
-        return view('auth.register');
+        $areas = Area::all();
+        return view('auth.register',compact('areas'));
     }
 
     /**
@@ -37,13 +39,21 @@ class RegisteredUserController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'phone' => ['required', 'string', 'max:255'],
+            'gender' => ['required', 'string', 'max:255' ],
+            'interesse' => ['required', 'integer', ],
         ]);
 
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
+            'telefone' => $request->phone,
+            'genero' => $request->gender,
+            'id_area' => $request->interesse,
             'password' => Hash::make($request->password),
         ]);
+
+
 
         event(new Registered($user));
 

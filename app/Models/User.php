@@ -21,7 +21,10 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'is_admin',
+        'userType',
+        'telefone',
+        'genero',
+        'id_area',
     ];
 
     /**
@@ -42,4 +45,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function artigo(){
+        return $this->hasMany('App\Models\Artigo');
+    }
 }

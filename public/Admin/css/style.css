@@ -3045,6 +3045,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#391800', end
     background-color: rgb(236, 234, 234);
 }
 
+.articles-img img{
+    width: 50px;
+}
+
+.mail-list-title{
+    margin-left: 2%;
+}
+.mail-list-title-info{
+    margin-left: 2%;
+}
+
 
 @media only screen and (max-width: 1200px) {
 	.cours-more-info .review{

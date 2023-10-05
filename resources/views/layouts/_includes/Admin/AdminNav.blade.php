@@ -22,23 +22,87 @@
                          <span class="ttr-label">Dashborad</span>
                      </a>
                  </li>
-                 <li>
-                    @if (auth()->user()->userType == '1')
 
-                    @endif
-                     <a href="{{ route('admin.cursos') }}" class="ttr-material-button">
-                         <span class="ttr-icon"><i class="ti-book"></i></span>
-                         <span class="ttr-label">Cursos Selecionados</span>
-                     </a>
-                 </li>
+                 {{-- ADMIN SESSION --}}
+                 @if (auth()->user()->userType == '1')
+
+                    {{-- ARTIGOS --}}
+                     <li>
+                         <a href="#" class="ttr-material-button">
+                             <span class="ttr-icon"><i class="ti-email"></i></span>
+                             <span class="ttr-label">Artigo</span>
+                             <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+                         </a>
+                         <ul>
+                             <li>
+                                 <a href="{{ route('admin.articles') }}" class="ttr-material-button"><span class="ttr-label">Listar Artigos</span></a>
+                             </li>
+                             <li>
+                                 <a href="{{ route('admin.newArticles') }}" class="ttr-material-button"><span class="ttr-label">Criar Novo Artigo</span></a>
+                             </li>
+
+                         </ul>
+                     </li>
+
+                     {{-- FORMADORES --}}
+                     <li>
+						<a href="#" class="ttr-material-button">
+							<span class="ttr-icon"><i class="ti-email"></i></span>
+		                	<span class="ttr-label">Formador</span>
+		                	<span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+		                </a>
+		                <ul>
+		                	<li>
+		                		<a href="mailbox.html" class="ttr-material-button"><span class="ttr-label">Listar Formadores</span></a>
+		                	</li>
+		                	<li>
+		                		<a href="mailbox-compose.html" class="ttr-material-button"><span class="ttr-label">Cadastrar Formador</span></a>
+		                	</li>
+		                </ul>
+		            </li>
+
+                    {{-- ALUNOS --}}
+                    <li>
+						<a href="#" class="ttr-material-button">
+							<span class="ttr-icon"><i class="ti-email"></i></span>
+		                	<span class="ttr-label">Alunos</span>
+		                	<span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+		                </a>
+		                <ul>
+		                	<li>
+		                		<a href="mailbox.html" class="ttr-material-button"><span class="ttr-label">Listar Alunos</span></a>
+		                	</li>
+		                	<li>
+		                		<a href="mailbox-compose.html" class="ttr-material-button"><span class="ttr-label">Cadastrar Alunos</span></a>
+		                	</li>
+		                </ul>
+		            </li>
+
+                    {{-- FORUM --}}
 
 
-                 <li>
-                     <a href="bookmark.html" class="ttr-material-button">
-                         <span class="ttr-icon"><i class="ti-bookmark-alt"></i></span>
-                         <span class="ttr-label">Cursos Feitos</span>
-                     </a>
-                 </li>
+                 @endif
+
+                 {{-- FORMADOR SESSION --}}
+                 @if (auth()->user()->userType == '2')
+                 @endif
+
+                 {{-- ALUNO SESSION --}}
+                 @if (auth()->user()->userType == '0')
+                     <li>
+                         <a href="{{ route('admin.cursos') }}" class="ttr-material-button">
+                             <span class="ttr-icon"><i class="ti-book"></i></span>
+                             <span class="ttr-label">Cursos Selecionados</span>
+                         </a>
+                     </li>
+
+                     <li>
+                         <a href="bookmark.html" class="ttr-material-button">
+                             <span class="ttr-icon"><i class="ti-bookmark-alt"></i></span>
+                             <span class="ttr-label">Cursos Feitos</span>
+                         </a>
+                     </li>
+                 @endif
 
                  <li>
                      <a href="bookmark.html" class="ttr-material-button">
