@@ -43,6 +43,23 @@
 
                          </ul>
                      </li>
+                    {{-- CURSOS --}}
+                     <li>
+                         <a href="#" class="ttr-material-button">
+                             <span class="ttr-icon"><i class="ti-email"></i></span>
+                             <span class="ttr-label">Cursos</span>
+                             <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+                         </a>
+                         <ul>
+                             <li>
+                                 <a href="{{ route('admin.articles') }}" class="ttr-material-button"><span class="ttr-label">Listar Cursos</span></a>
+                             </li>
+                             <li>
+                                 <a href="{{ route('admin.newArticles') }}" class="ttr-material-button"><span class="ttr-label">Cadastrar Novo Curso</span></a>
+                             </li>
+
+                         </ul>
+                     </li>
 
                      {{-- FORMADORES --}}
                      <li>
@@ -53,10 +70,10 @@
 		                </a>
 		                <ul>
 		                	<li>
-		                		<a href="mailbox.html" class="ttr-material-button"><span class="ttr-label">Listar Formadores</span></a>
+		                		<a href="{{ route('admin.formadores') }}" class="ttr-material-button"><span class="ttr-label">Listar Formadores</span></a>
 		                	</li>
 		                	<li>
-		                		<a href="mailbox-compose.html" class="ttr-material-button"><span class="ttr-label">Cadastrar Formador</span></a>
+		                		<a href="{{ route('admin.novoformador') }}" class="ttr-material-button"><span class="ttr-label">Cadastrar Formador</span></a>
 		                	</li>
 		                </ul>
 		            </li>
@@ -70,10 +87,10 @@
 		                </a>
 		                <ul>
 		                	<li>
-		                		<a href="mailbox.html" class="ttr-material-button"><span class="ttr-label">Listar Alunos</span></a>
+		                		<a href="{{ route('admin.alunos') }}" class="ttr-material-button"><span class="ttr-label">Listar Alunos</span></a>
 		                	</li>
 		                	<li>
-		                		<a href="mailbox-compose.html" class="ttr-material-button"><span class="ttr-label">Cadastrar Alunos</span></a>
+		                		<a href="{{ route('admin.novoaluno') }}" class="ttr-material-button"><span class="ttr-label">Cadastrar Alunos</span></a>
 		                	</li>
 		                </ul>
 		            </li>

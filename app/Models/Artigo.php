@@ -13,6 +13,7 @@ class Artigo extends Model
     protected $fillable = [
         'titulo',
         'imagem',
+        'pdf',
         'descricao',
         'id_user',
     ];

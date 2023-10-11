@@ -7,7 +7,7 @@
             <div class="db-breadcrumb">
                 <h4 class="breadcrumb-title">Artigos</h4>
                 <ul class="db-breadcrumb-list">
-                    <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="{{ route('admin.index') }}"><i class="fa fa-home"></i>Home</a></li>
                     <li>Artigos</li>
                 </ul>
             </div>
@@ -55,7 +55,7 @@
                                                 <img src="/Site/images/articles/{{ $artigo->imagem }}">
                                             </div>
 
-                                        
+
                                             <div class="mail-list-title">
                                                 <h6>{{ $artigo->titulo }}</h6>
                                             </div>
@@ -66,10 +66,31 @@
                                                 <span>{{ $artigo->user->name }}</span>
                                             </div>
                                             <ul class="mailbox-toolbar">
-                                                <li data-toggle="tooltip" title="Delete"><i class="fa fa-trash-o"></i></li>
-                                                <li data-toggle="tooltip" title="Archive"><i class="fa fa-arrow-down"></i>
+                                                {{-- DELETE AN ARTICLE --}}
+                                                <li data-toggle="tooltip" title="Delete">
+                                                    <a href="{{ route('admin.delete.articles', $artigo->id) }}">
+                                                        <i class="fa fa-trash-o"></i>
+                                                    </a>
                                                 </li>
-                                                <li data-toggle="tooltip" title="update"><i class="fa fa-clock-o"></i></li>
+                                                {{-- SHOW AN ARTICLES DETAILS --}}
+                                                <li data-toggle="tooltip" title="ver">
+                                                    <i class="fa fa-eye">
+
+                                                    </i>
+                                                </li>
+                                                {{-- DOWNLOAD AN ARTICLE --}}
+                                                <li data-toggle="tooltip" title="download">
+
+                                                        <a href="{{ route('admin.download.articles', $artigo->pdf) }}"><i class="fa fa-arrow-down"></i></a>
+
+                                                </li>
+                                                {{-- UPADATE AM ARTICLE --}}
+                                                <li data-toggle="tooltip" title="editar">
+                                                    <a href="{{ route('admin.update.articlesView', $artigo->id) }}">
+                                                        <i class="fa fa-edit"></i>
+                                                    </a>
+                                                </li>
+
 
                                             </ul>
                                         </div>

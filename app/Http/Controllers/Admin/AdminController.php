@@ -14,10 +14,10 @@ class AdminController extends Controller
             return view('Admin.Gerente.index');
         }
         if($userType == '2'){
-            return view('Admin.Formador.index');
+            return view('Admin.Formador.home.index');
         }
         else{
-            return view('Admin.Aluno.index');
+            return view('Admin.Aluno.Home.index');
         }
     }
 }

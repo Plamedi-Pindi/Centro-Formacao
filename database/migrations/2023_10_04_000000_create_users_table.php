@@ -25,7 +25,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
 
-            $table->unsignedBigInteger('id_area');
+            $table->unsignedBigInteger('id_area')->nullable();
             $table->foreign('id_area')->references('id')->on('areas')->onDelete('cascade')->onUpdate('cascade')->nullable();
 
 

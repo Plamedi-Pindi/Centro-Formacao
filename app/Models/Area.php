@@ -12,4 +12,8 @@ class Area extends Model
     protected $fillable = [
         'nome',
     ];
+
+    public function user(){
+        return $this->hasMany('App\Models\User');
+    }
 }

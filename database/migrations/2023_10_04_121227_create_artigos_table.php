@@ -18,6 +18,7 @@ class CreateArtigosTable extends Migration
             $table->string('titulo');
             $table->string('descricao');
             $table->string('imagem');
+            $table->string('pdf');
             $table->timestamps();
 
             $table->unsignedBigInteger('id_user');

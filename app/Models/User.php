@@ -50,4 +50,8 @@ class User extends Authenticatable
     public function artigo(){
         return $this->hasMany('App\Models\Artigo');
     }
+
+    public function interesse(){
+        return $this->belongsTo(area::class, 'id_area');
+    }
 }
