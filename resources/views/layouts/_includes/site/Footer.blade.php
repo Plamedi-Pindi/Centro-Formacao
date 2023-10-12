@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="d-flex align-items-stretch">
                     <div class="pt-logo mr-auto">
-                        {{-- <a href="index.html"><img src="Site/images/logo-white.png" alt=""/></a> --}}
+                        {{-- <a href="index.html"><img src="/Site/images/logo-white.png" alt=""/></a> --}}
                     </div>
                     <div class="pt-social-link">
                         <ul class="list-inline m-a0">
@@ -28,7 +28,7 @@
                         <h5 class="footer-title">INSCREVA-SE</h5>
 
                         <div class="subscribe-form m-b20">
-                            <form class="subscription-form" action="http://educhamp.themetrades.com/demo/Site/script/mailchamp.php" method="post">
+                            <form class="subscription-form" action="http://educhamp.themetrades.com/demo//Site/script/mailchamp.php" method="post">
                                 <div class="ajax-message"></div>
                                 <div class="input-group">
                                     <input name="email" required="required"  class="form-control" placeholder="Seu Email" type="email">
@@ -81,34 +81,34 @@
 </div>
 
 <!-- External JavaScripts -->
-<script src="Site/js/jquery.min.js"></script>
-<script src="Site/vendors/bootstrap/js/popper.min.js"></script>
-<script src="Site/vendors/bootstrap/js/bootstrap.min.js"></script>
-<script src="Site/vendors/bootstrap-select/bootstrap-select.min.js"></script>
-<script src="Site/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
-<script src="Site/vendors/magnific-popup/magnific-popup.js"></script>
-<script src="Site/vendors/counter/waypoints-min.js"></script>
-<script src="Site/vendors/counter/counterup.min.js"></script>
-<script src="Site/vendors/imagesloaded/imagesloaded.js"></script>
-<script src="Site/vendors/masonry/masonry.js"></script>
-<script src="Site/vendors/masonry/filter.js"></script>
-<script src="Site/vendors/owl-carousel/owl.carousel.js"></script>
-<script src="Site/js/functions.js"></script>
-<script src="Site/js/contact.js"></script>
-<script src='Site/vendors/switcher/switcher.js'></script>
+<script src="/Site/js/jquery.min.js"></script>
+<script src="/Site/vendors/bootstrap/js/popper.min.js"></script>
+<script src="/Site/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="/Site/vendors/bootstrap-select/bootstrap-select.min.js"></script>
+<script src="/Site/vendors/bootstrap-touchspin/jquery.bootstrap-touchspin.js"></script>
+<script src="/Site/vendors/magnific-popup/magnific-popup.js"></script>
+<script src="/Site/vendors/counter/waypoints-min.js"></script>
+<script src="/Site/vendors/counter/counterup.min.js"></script>
+<script src="/Site/vendors/imagesloaded/imagesloaded.js"></script>
+<script src="/Site/vendors/masonry/masonry.js"></script>
+<script src="/Site/vendors/masonry/filter.js"></script>
+<script src="/Site/vendors/owl-carousel/owl.carousel.js"></script>
+<script src="/Site/js/functions.js"></script>
+<script src="/Site/js/contact.js"></script>
+<script src='/Site/vendors/switcher/switcher.js'></script>
 <!-- Revolution JavaScripts Files -->
-<script src="Site/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="Site/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="/Site/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="/Site/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
 <!-- Slider revolution 5.0 Extensions  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-<script src="Site/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="Site/vendors/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="Site/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="Site/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="Site/vendors/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="Site/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="Site/vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="Site/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="Site/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script src="/Site/vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="/Site/vendors/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="/Site/vendors/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="/Site/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="/Site/vendors/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="/Site/vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="/Site/vendors/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="/Site/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="/Site/vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
 <script>
 jQuery(document).ready(function() {
 var ttrevapi;
@@ -118,7 +118,7 @@ if(tpj("#rev_slider_486_1").revolution == undefined){
 }else{
     ttrevapi = tpj("#rev_slider_486_1").show().revolution({
         sliderType:"standard",
-        jsFileLocation:"Site/vendors/revolution/js/",
+        jsFileLocation:"/Site/vendors/revolution/js/",
         sliderLayout:"fullwidth",
         dottedOverlay:"none",
         delay:9000,

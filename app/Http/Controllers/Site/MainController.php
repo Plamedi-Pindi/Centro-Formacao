@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Site;
 
 use App\Http\Controllers\Controller;
+use App\Models\Artigo;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -19,7 +20,9 @@ class MainController extends Controller
 
      /*############## ARTICLES ###############*/
     public function article(){
-        return view('Site.Articles.artigos');
+        $artigos = Artigo::all();
+        $sugestao = Artigo::paginate(6);
+        return view('Site.Articles.artigos', compact('artigos', 'sugestao'));
     }
 
      /*############## CONTACTS ###############*/

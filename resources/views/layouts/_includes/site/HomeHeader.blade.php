@@ -21,8 +21,8 @@
 	<meta name="format-detection" content="telephone=no">
 
 	<!-- FAVICONS ICON ============================================= -->
-	<link rel="icon" href="Site/images/favicon.ico" type="image/x-icon" />
-	<link rel="shortcut icon" type="image/x-icon" href="Site/images/favicon.png" />
+	<link rel="icon" href="/Site/images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" type="image/x-icon" href="/Site/images/favicon.png" />
 
 	<!-- PAGE TITLE HERE ============================================= -->
 	<title> @yield('title')</title>
@@ -31,27 +31,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!--[if lt IE 9]>
-	<script src="Site/js/html5shiv.min.js"></script>
-	<script src="Site/js/respond.min.js"></script>
+	<script src="/Site/js/html5shiv.min.js"></script>
+	<script src="/Site/js/respond.min.js"></script>
 	<![endif]-->
 
 	<!-- All PLUGINS CSS ============================================= -->
-	<link rel="stylesheet" type="text/css" href="Site/css/assets.css">
+	<link rel="stylesheet" type="text/css" href="/Site/css/assets.css">
 
 	<!-- TYPOGRAPHY ============================================= -->
-	<link rel="stylesheet" type="text/css" href="Site/css/typography.css">
+	<link rel="stylesheet" type="text/css" href="/Site/css/typography.css">
 
 	<!-- SHORTCODES ============================================= -->
-	<link rel="stylesheet" type="text/css" href="Site/css/shortcodes/shortcodes.css">
+	<link rel="stylesheet" type="text/css" href="/Site/css/shortcodes/shortcodes.css">
 
 	<!-- STYLESHEETS ============================================= -->
-	<link rel="stylesheet" type="text/css" href="Site/css/style.css">
-	<link class="skin" rel="stylesheet" type="text/css" href="Site/css/color/color-1.css">
+	<link rel="stylesheet" type="text/css" href="/Site/css/style.css">
+	<link class="skin" rel="stylesheet" type="text/css" href="/Site/css/color/color-1.css">
 
 	<!-- REVOLUTION SLIDER CSS ============================================= -->
-	<link rel="stylesheet" type="text/css" href="Site/vendors/revolution/css/layers.css">
-	<link rel="stylesheet" type="text/css" href="Site/vendors/revolution/css/settings.css">
-	<link rel="stylesheet" type="text/css" href="Site/vendors/revolution/css/navigation.css">
+	<link rel="stylesheet" type="text/css" href="/Site/vendors/revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="/Site/vendors/revolution/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="/Site/vendors/revolution/css/navigation.css">
 	<!-- REVOLUTION SLIDER END -->
 </head>
 <body id="bg">
@@ -77,7 +77,12 @@
 
                             @auth
                                 <li><a href="{{ route('admin.index') }}">Meu perfil</a></li>
-							    <li><a href="{{ route('register') }}">Logout</a></li>
+							    <li>
+                                    <form action="{{ route('logout') }}" method="POST">
+                                        @csrf
+                                        <input type="submit" value="Logout" id="" class="logout-input" style="border: none; background: transparent; cursor: pointer; color: white;">
+                                    </form>
+                                </li>
                             @endauth
 						</ul>
 					</div>
@@ -89,7 +94,7 @@
                 <div class="container clearfix">
 					<!-- Header Logo ==== -->
 					<div class="menu-logo">
-						{{-- <a href="index.html"><img src="Site/images/logo-white.png" alt=""></a> --}}
+						{{-- <a href="index.html"><img src="/Site/images/logo-white.png" alt=""></a> --}}
 					</div>
 					<!-- Mobile Nav Button ==== -->
                     <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,7 +125,7 @@
 					<!-- Navigation Menu ==== -->
                     <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
 						<div class="menu-logo">
-							<a href="index.html"><img src="Site/images/logo.png" alt=""></a>
+							<a href="index.html"><img src="/Site/images/logo.png" alt=""></a>
 						</div>
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="{{ route('site.home') }}">Home </a></li>
@@ -143,7 +148,7 @@
 										</ul>
 									</li>
 									<li class="add-menu-right">
-										<img src="Site/images/adv/adv.jpg" alt=""/>
+										<img src="/Site/images/adv/adv.jpg" alt=""/>
 									</li>
 								</ul>
 							</li>

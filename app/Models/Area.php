@@ -16,4 +16,8 @@ class Area extends Model
     public function user(){
         return $this->hasMany('App\Models\User');
     }
+
+    public function curso(){
+        return $this->hasMany('App\Models\Curso');
+    }
 }

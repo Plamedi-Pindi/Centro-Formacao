@@ -2023,6 +2023,9 @@ button.back-to-top {
 	padding:15px;
 	font-size: 13px;
 }
+.action-box img{
+    height: 300px !important;
+}
 .cours-bx .action-box .btn{
 	border-radius: 0;
 	position: absolute;

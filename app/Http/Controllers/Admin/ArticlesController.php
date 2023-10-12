@@ -7,11 +7,14 @@ use App\Models\Artigo;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Storage;
+
 class ArticlesController extends Controller
 {
     public function index(){
 
         $artigos = Artigo::all();
+       
 
         return view('Admin.Articles.articles', compact('artigos'));
     }
@@ -66,7 +69,15 @@ class ArticlesController extends Controller
 
     /***** DOWNLOAD START ******/
     public function download(Request $request, $pdf){
-        return response()->download(public_path('Site/pdfs/articles', $pdf));
+        return response()->download(public_path('Site/pdfs/articles/'. $pdf));
+    }
+
+    /***** DOWNLOAD START ******/
+    public function show($id){
+        $artigo = Artigo::findOrFail($id);
+        $artigos = Artigo::paginate(6);
+
+        return view('Site.Articles.show.lerArtigo', compact('artigo', 'artigos'));
     }
 
 

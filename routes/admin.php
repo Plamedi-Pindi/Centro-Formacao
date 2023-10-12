@@ -23,7 +23,10 @@ Route::middleware('auth')->group(function () {
     Route::post('admin/novoartigo', [ArticlesController::class, 'store'])->name('admin.postArticles');
 
     /************  DOWNLOAD ARTICLES  **********/
-    Route::post('admin/download/{file}', [ArticlesController::class, 'download'])->name('admin.download.articles');
+    Route::get('admin/download/{file}', [ArticlesController::class, 'download'])->name('admin.download.articles');
+
+    /************  READ ARTICLES  **********/
+    Route::get('admin/lerartigo/{id}', [ArticlesController::class, 'show'])->name('admin.read.articles');
 
     /************  DELETE ARTICLES  **********/
     Route::get('admin/eliminar/{file}', [ArticlesController::class, 'destroy'])->name('admin.delete.articles');
@@ -37,7 +40,18 @@ Route::middleware('auth')->group(function () {
 
 
     /************ CURSOS INDEX **********/
-    Route::get('user/cursos', [CursosController::class, 'curso'])->name('admin.cursos');
+    Route::get('user/cursos', [CursosController::class, 'index'])->name('admin.cursos');
+
+    /************ NEW CURSO **********/
+    Route::get('admin/novocurso', [CursosController::class, 'create'])->name('admin.novocurso');
+
+    /************ NEW CURSO **********/
+    Route::post('admin/novocurso', [CursosController::class, 'store'])->name('admin.curso.post');
+
+    /************ CURSO LIST **********/
+    Route::get('admin/listadecursos', [CursosController::class, 'cursoList'])->name('admin.cursoList');
+
+
 
 
 

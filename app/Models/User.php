@@ -51,6 +51,10 @@ class User extends Authenticatable
         return $this->hasMany('App\Models\Artigo');
     }
 
+    public function curso(){
+        return $this->hasMany('App\Models\Curso');
+    }
+
     public function interesse(){
         return $this->belongsTo(area::class, 'id_area');
     }

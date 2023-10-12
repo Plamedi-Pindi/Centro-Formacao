@@ -55,7 +55,7 @@
                                  <a href="{{ route('admin.articles') }}" class="ttr-material-button"><span class="ttr-label">Listar Cursos</span></a>
                              </li>
                              <li>
-                                 <a href="{{ route('admin.newArticles') }}" class="ttr-material-button"><span class="ttr-label">Cadastrar Novo Curso</span></a>
+                                 <a href="{{ route('admin.novocurso') }}" class="ttr-material-button"><span class="ttr-label">Cadastrar Novo Curso</span></a>
                              </li>
 
                          </ul>

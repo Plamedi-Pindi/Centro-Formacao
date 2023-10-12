@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\Curso;
 
 class AdminController extends Controller
 {
@@ -17,7 +19,13 @@ class AdminController extends Controller
             return view('Admin.Formador.home.index');
         }
         else{
-            return view('Admin.Aluno.Home.index');
+
+            $user = auth()->user()->id_area;
+            $interesses = Curso::where('id_area', $user)->get();
+
+            // return $interesse;
+            // $user->
+            return view('Admin.Aluno.Home.index', compact('interesses'));
         }
     }
 }

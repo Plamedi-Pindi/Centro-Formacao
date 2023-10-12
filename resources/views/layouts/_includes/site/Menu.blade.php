@@ -19,8 +19,13 @@
                         @endguest
 
                         @auth
-                            <li><a href="{{ route('admin.index') }}">Meu</a></li>
-                            <li><a href="{{ route('register') }}">Logout</a></li>
+                            <li><a href="{{ route('admin.index') }}">Meu perfil</a></li>
+                            <li>
+                                <form action="{{ route('logout') }}" method="POST">
+                                    @csrf
+                                    <input type="submit" value="Logout" id="" class="logout-input" style="border: none; background: transparent; cursor: pointer;">
+                                </form>
+                            </li>
                         @endauth
                     </ul>
                 </div>
@@ -32,7 +37,7 @@
             <div class="container clearfix">
                 <!-- Header Logo ==== -->
                 <div class="menu-logo">
-                    {{-- <a href="index.html"><img src="Site/images/logo.png" alt=""></a> --}}
+                    {{-- <a href="index.html"><img src="/Site/images/logo.png" alt=""></a> --}}
                 </div>
                 <!-- Mobile Nav Button ==== -->
                 <button class="navbar-toggler collapsed menuicon justify-content-end" type="button" data-toggle="collapse" data-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +68,7 @@
                 <!-- Navigation Menu ==== -->
                 <div class="menu-links navbar-collapse collapse justify-content-start" id="menuDropdown">
 						<div class="menu-logo">
-							{{-- <a href="index.html"><img src="Site/images/logo.png" alt=""></a> --}}
+							{{-- <a href="index.html"><img src="/Site/images/logo.png" alt=""></a> --}}
 						</div>
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="{{ route('site.home') }}">Home </a></li>
@@ -84,7 +89,7 @@
 										</ul>
 									</li>
 									<li class="add-menu-right">
-										<img src="Site/images/adv/adv.jpg" alt=""/>
+										<img src="/Site/images/adv/adv.jpg" alt=""/>
 									</li>
 								</ul>
 							</li>
